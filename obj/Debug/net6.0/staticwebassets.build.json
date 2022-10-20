@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "07ahml7AZYFbL1wA5ga8+YvaTn9y0WQ/+EOSuskFD/M=",
+  "Source": "gather-api",
+  "BasePath": "_content/gather-api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
