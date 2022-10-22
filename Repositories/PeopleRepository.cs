@@ -16,12 +16,18 @@ namespace gather_api.Repositories {
     }
 
     public async Task<Person> AddPersonAsync(Person person) {
-      try {
-        await _context.Person.AddAsync(person);
-        return person;
-      } catch (System.Exception) {
-        throw;
-      }
+      await _context.Person.AddAsync(person);
+      return person;
+    }
+
+    public async Task<Person?> GetPersonByIdAsync(int id) {
+      Person? person = await _context.Person.FirstOrDefaultAsync(person => person.Id == id);
+      return person;
+    }
+
+    public bool DeletePerson(Person person) {
+      _context.Person.Remove(person);
+      return true;
     }
   }
 }

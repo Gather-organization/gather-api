@@ -32,5 +32,29 @@ namespace gather_api.Services {
 
       return person;
     }
+
+    public async Task<bool> DeletePersonAsync(int id) {
+      Person? person = await _peopleRepository.GetPersonByIdAsync(id);
+
+      if (person == null) throw new Exception("No person found for provided Id.");
+
+      _peopleRepository.DeletePerson(person);
+
+      await _context.SaveChangesAsync();
+
+      return true;
+    }
+
+    public async Task<Person> UpdatePersonAsync(int id, PersonDto personDto) {
+      Person? person = await _peopleRepository.GetPersonByIdAsync(id);
+
+      if (person == null) throw new Exception("Could not find a person for the provided Id.");
+
+      _mapper.Map(personDto, person);
+
+      await _context.SaveChangesAsync();
+
+      return person;
+    }
   }
 }
