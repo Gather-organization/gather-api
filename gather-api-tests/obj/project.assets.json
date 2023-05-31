@@ -6844,26 +6844,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\joaom\\.nuget\\packages\\": {}
+    "/Users/joaotripoli/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\Gather\\gather-api\\gather-api-tests\\gather-api-tests.csproj",
+      "projectUniqueName": "/Users/joaotripoli/Developer/Repos/Gather/gather-api/gather-api-tests/gather-api-tests.csproj",
       "projectName": "gather-api-tests",
-      "projectPath": "D:\\Projects\\Gather\\gather-api\\gather-api-tests\\gather-api-tests.csproj",
-      "packagesPath": "C:\\Users\\joaom\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\Gather\\gather-api\\gather-api-tests\\obj\\",
+      "projectPath": "/Users/joaotripoli/Developer/Repos/Gather/gather-api/gather-api-tests/gather-api-tests.csproj",
+      "packagesPath": "/Users/joaotripoli/.nuget/packages/",
+      "outputPath": "/Users/joaotripoli/Developer/Repos/Gather/gather-api/gather-api-tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\joaom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/joaotripoli/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6927,7 +6925,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
       }
     }
   }
